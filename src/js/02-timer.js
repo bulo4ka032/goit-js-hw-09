@@ -22,7 +22,6 @@ const options = {
   onClose(selectedDates) {
     currentDate = new Date();
     if (selectedDates[0] - currentDate < 0) {
-      //window.alert("Please choose a date in the future")
       Notify.failure('Please choose a date in the future', {
         timeout: 5000,
         width: 300,
