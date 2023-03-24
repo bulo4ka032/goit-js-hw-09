@@ -1,9 +1,7 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-//const flatpickr = require('flatpickr');
 
-//const input = document.querySelector('#datetime-picker');
 const startBtn = document.querySelector('button[data-start]');
 //const timer = document.querySelector('.timer');
 const dataDays = document.querySelector('[data-days]');
@@ -73,7 +71,7 @@ function onTimerStart() {
       return;
     }
     timeCounter(convertMs(dateCounter));
-  }, 1_000);
+  }, 1000);
 }
 
 // console.log(convertMs(2000)); // {days: 0, hours: 0, minutes: 0, seconds: 2}
