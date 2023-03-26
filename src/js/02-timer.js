@@ -18,7 +18,7 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    currentDate = Date.now();
+    const currentDate = Date.now();
     if (selectedDates[0] - currentDate < 0) {
       Notify.failure('Please choose a date in the future', {
         timeout: 5000,
