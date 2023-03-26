@@ -25,7 +25,7 @@ const options = {
         width: 300,
       });
     } else {
-    restartBtn.disabled = false;
+    startBtn.disabled = false;
     }
     console.log(selectedDates[0]);
   },
