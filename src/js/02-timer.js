@@ -18,14 +18,14 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    currentDate = new Date();
+    currentDate = Date.now();
     if (selectedDates[0] - currentDate < 0) {
       Notify.failure('Please choose a date in the future', {
         timeout: 5000,
         width: 300,
       });
     } else {
-      startBtn.disabled = false;
+    restartBtn.disabled = false;
     }
     console.log(selectedDates[0]);
   },
